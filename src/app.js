@@ -3,6 +3,7 @@ const path = require('path')
 const express = require('express');
 const hbs = require('hbs')
 const app = express();
+const port = process.env.PORT || 3000
 const Weather = require('./utils/weatherApi')
 const geoCode = require('./utils/geocode')
 // define path for express config
@@ -84,6 +85,6 @@ app.get('*' , (req , res) => {
     })
 })
 
-app.listen(3000 , () => {
-    console.log('the server is running on port 3000')
+app.listen(port , () => {
+    console.log('the server is running on port'+port)
 }); // runs the server
