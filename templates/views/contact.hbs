@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact page</title>
+    <style>
+        input {
+            padding: 5px;
+            margin: 2px 0;
+        }
+        textarea {
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    {{>header}}
+    <p><span style="color:red">*</span>{{message}}</p>
+    <form action="">
+        <input type="email" name="email" placeholder="Your Email" autocomplete="off"><br>
+        <textarea type="text" col="8" row="10" name="email" placeholder="Your Email"></textarea><br>
+        <input type="submit" value="submit">
+    </form>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #333;
+    width: 1100px;
+    margin: 0 auto;
+
+}
+.main-header {
+    font-size: 60px;
+    text-transform: capitalize;
+    margin: 80px 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group input {
+    padding: 12px;
+    width: 800px;
+    margin: 0 12px;
+    border:1px solid #4caf50;
+    font-size: 20px;
+}
+.btn {
+    background-color: #4caf50;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 13px 22px;
+    font-size: 18px;
+    display: flex;
+}
+.weather {
+    width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+.weather p {
+    font-size: 22px;
+}
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found p{
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+@media (max-width : 992px) {
+    body {
+        width: 600px;
+    }
+    
+    .form-group input {
+        width: 450px;
+    }
+}
+@media (max-width : 728px) {
+    body {
+        width: 600px;
+    }
+    .main-header {
+        font-size: 40px;
+        width: 400px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .form-group input {
+        width: 400px;
+    }
+}
+@media (max-width : 600px) {
+    body {
+        width: 440px;
+    }
+    .form-group input {
+        width: 350px;
+    }
+}
+@media (max-width : 500px) {
+    body {
+        width: 340px;
+    }
+    .main-header {
+        font-size: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+    .form-group input {
+        width: 250px;
+    }
+}
