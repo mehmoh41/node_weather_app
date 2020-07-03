@@ -91,8 +91,23 @@ body {
     .main-header {
         font-size: 30px;
         border-bottom: 1px solid #ccc;
+        width: 180px;
     }
     .form-group input {
         width: 250px;
+    }
+}
+@media (max-width : 400px) {
+    body {
+        width: 250px;
+    }
+    .main-header {
+        font-size: 22px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        width : 280px;
+    }
+    .form-group input {
+        width: 150px;
     }
 }

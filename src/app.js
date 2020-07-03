@@ -26,12 +26,12 @@ app.get('' , (req ,res) => {
     })
 })
 // bootstrap and jquery
-// app.get('/about',(req,res)=> {
-//     res.render('about',{
-//         title : 'the is the about page',
-//         name : 'ali'
-//     })
-// })
+app.get('/about',(req,res)=> {
+    res.render('about',{
+        title : 'the is the about page',
+        name : 'ali'
+    })
+})
 // app.get('/contact' , (req ,res) => {
 //     res.render('contact' , {
 //         title : 'Contact Page',
