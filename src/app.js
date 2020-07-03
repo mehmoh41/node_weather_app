@@ -39,32 +39,32 @@ app.get('' , (req ,res) => {
 //         name : 'mehdi mohammadi'
 //     })
 // })
-// app.get('/weather' , (req , res) => {
-//     if(!req.query.address) {
-//          res.send({
-//             error : 'no address given'
-//         })
-//     }else {
-//         geoCode(req.query.address,(error,data)=>{
-//             if(error) {
-//                 res.send({error})
-//             }
-//             Weather(data.latitude,data.longtitude , (error,weatherData) => {
-//                 if(error){
-//                     return res.send({
-//                       error
-//                     })
-//                 }
-//                 res.send({
-//                     location : data.location,
-//                     weather : weatherData.weather,
-//                     temp   : weatherData.temperature,
-//                     address : req.query.address
-//                 })
-//             })
-//         }) 
-//     }
-// })
+app.get('/weather' , (req , res) => {
+    if(!req.query.address) {
+         res.send({
+            error : 'no address given'
+        })
+    }else {
+        geoCode(req.query.address,(error,data)=>{
+            if(error) {
+                res.send({error})
+            }
+            Weather(data.latitude,data.longtitude , (error,weatherData) => {
+                if(error){
+                    return res.send({
+                      error
+                    })
+                }
+                res.send({
+                    location : data.location,
+                    weather : weatherData.weather,
+                    temp   : weatherData.temperature,
+                    address : req.query.address
+                })
+            })
+        }) 
+    }
+})
 
 //practice
 // app.get('/products' , (req , res) => {
