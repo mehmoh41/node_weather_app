@@ -93,6 +93,9 @@ body {
         border-bottom: 1px solid #ccc;
         width: 180px;
     }
+    .weather {
+        width: 260px;
+    }
     .form-group input {
         width: 250px;
     }
@@ -106,6 +109,9 @@ body {
         border-bottom: 1px solid #ccc;
         text-align: center;
         width : 280px;
+    }
+    .weather {
+        width: 240px;
     }
     .form-group input {
         width: 150px;

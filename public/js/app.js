@@ -49,12 +49,9 @@ weatherForm.addEventListener('submit',(e)=>{
             area.textContent = data.error;
         }
         else {
-            area.textContent = `searched : `+data.location
-            forecast.textContent = "Weather : "+data.weather
-            temp.textContent = "Temperature : "+data.temp
-            
-            console.log(data.location)
-            console.log(data.weather)
+            area.textContent =data.location
+            forecast.textContent =data.weather
+            temp.textContent =data.temp
         }
     })
 })
